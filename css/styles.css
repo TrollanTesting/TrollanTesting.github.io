@@ -264,17 +264,19 @@ form {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 form:hover {
     transform: translateY(-5px); /* Efecto de elevación del formulario */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
 }
 
 form label {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 1.1em;
+    color: #333; /* Color más oscuro para mayor contraste */
 }
 
 form input, form textarea {
@@ -287,13 +289,13 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #4caf50;
+    border-color: #888; /* Color gris más elegante */
     outline: none;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra de enfoque verde */
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5); /* Sombra de enfoque gris */
 }
 
 form button {
-    background-color: #4caf50;
+    background-color: #555; /* Color inicial más neutro */
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -301,12 +303,32 @@ form button {
     border-radius: 30px;
     font-size: 1.1em;
     font-weight: 600;
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    transition: background-color 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+body.dark-theme form label {
+    color: #fff; /* Cambiar el color del texto de las etiquetas a blanco */
 }
 
 form button:hover {
-    background-color: #388e3c;
+    background-color: #333; /* Color más oscuro en hover */
     transform: translateY(-3px); /* Efecto de elevación en el botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+body.dark-theme form {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme form input, body.dark-theme form textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-theme form input:focus, body.dark-theme form textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 /* Footer */
@@ -837,4 +859,368 @@ footer {
     }
 }
 
+#asks2 {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
 
+#asks2 h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal de servicios */
+.service-container-custom {
+    background-color: #f5f5f5; /* Fondo más claro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    max-width: 700px; /* Limitar el ancho máximo */
+    margin: 40px auto; /* Centrar la caja con margen superior */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre elementos */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Lista de servicios */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Estilo para cada elemento de la lista */
+.service-item {
+    border-bottom: 1px solid #ccc; /* Borde más suave */
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.service-item:hover {
+    background-color: #eaeaea; /* Fondo más claro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Eliminar el borde inferior del último elemento */
+.service-item:last-child {
+    border-bottom: none;
+}
+
+/* Botón con icono + texto */
+.service-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px 0; /* Reducir el padding */
+    font-size: 1.1em; /* Reducir el tamaño de fuente */
+    font-weight: 600; /* Peso moderado */
+    color: #444; /* Color más neutro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    position: relative;
+}
+
+/* Línea inferior en hover */
+/* Botón con icono + texto */
+.service-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 12px 15px; /* Añadido padding horizontal y vertical */
+    font-size: 1.1em; /* Reducir el tamaño de fuente */
+    font-weight: 600; /* Peso moderado */
+    color: #444; /* Color más neutro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    position: relative;
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Línea inferior en hover */
+.service-btn::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #6abf69; /* Verde más suave */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-btn:hover::after {
+    transform: scaleX(1); /* Solo subrayado */
+}
+
+/* Elimina el cambio de color de fondo en hover */
+.service-btn:hover {
+    background-color: transparent; /* Sin fondo */
+    color: #444; /* Mantén el color del texto */
+}
+
+/* Icono del botón */
+.service-btn span {
+    font-size: 1.3em; /* Reducir el tamaño del icono */
+    transition: transform 0.3s ease;
+}
+
+/* Rotar el icono cuando está abierto */
+.service-item.open .service-btn span {
+    transform: rotate(45deg);
+}
+
+/* Descripción oculta inicialmente */
+.service-description {
+    max-height: 0;
+    overflow: hidden;
+    padding: 10px 15px; /* Añadido padding interno para separar el texto del borde */
+    color: #555; /* Color más neutro */
+    font-size: 0.95em; /* Reducir el tamaño de fuente */
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Mostrar descripción al hacer clic */
+.service-item.open .service-description {
+    max-height: 120px; /* Reducir la altura máxima */
+    padding: 12px 15px; /* Mantener el padding interno */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .service-container-custom {
+        padding: 15px; /* Reducir el padding en móviles */
+    }
+
+    .service-btn {
+        font-size: 1em; /* Reducir el tamaño de fuente */
+    }
+
+    .service-description {
+        font-size: 0.85em; /* Reducir el tamaño de fuente de la descripción */
+    }
+
+    .service-item {
+        padding: 8px 0; /* Reducir el padding entre elementos */
+    }
+}
+
+
+/* Modo oscuro para elementos faltantes */
+
+/* General */
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: #ffffff; /* Cambiar los encabezados a blanco */
+}
+
+/* Navegación */
+body.dark-theme nav ul li a {
+    color: #cccccc; /* Color claro para los enlaces */
+    background-color: transparent; /* Fondo transparente */
+}
+
+body.dark-theme nav ul li a:hover {
+    color: #ffffff; /* Blanco al pasar el ratón */
+    background-color: #4caf50; /* Fondo verde */
+}
+
+/* Footer */
+body.dark-theme footer {
+    background-color: #121212; /* Fondo oscuro */
+    color: #cccccc; /* Texto claro */
+}
+
+/* Pricing Section */
+body.dark-theme .pricing-block {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .pricing-block h3 {
+    color: #4caf50; /* Verde para los títulos */
+}
+
+body.dark-theme .pricing-block p {
+    color: #cccccc; /* Texto claro */
+}
+
+/* Process Step */
+body.dark-theme .process-step {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .step-number {
+    background-color: #4caf50; /* Verde para el número */
+    color: #ffffff; /* Texto blanco */
+}
+
+body.dark-theme .step-content h3 {
+    color: #4caf50; /* Verde para los títulos */
+}
+
+body.dark-theme .step-content ul li {
+    color: #cccccc; /* Texto claro */
+}
+
+/* Servicios */
+body.dark-theme .service-container-custom {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .service-item {
+    border-bottom: 1px solid #555555; /* Borde más claro */
+}
+
+body.dark-theme .service-description {
+    background-color: #444444; /* Fondo oscuro */
+    color: #cccccc; /* Texto claro */
+}
+
+/* Carrusel */
+body.dark-theme .carousel img {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra clara */
+}
+
+/* Ajustes adicionales */
+body.dark-theme .btn-contratar {
+    background-color: #4caf50; /* Verde */
+    color: #ffffff; /* Texto blanco */
+}
+
+body.dark-theme .btn-contratar:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+/* Servicios */
+body.dark-theme #services {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme #services h2 {
+    color: #4caf50; /* Verde para el título */
+}
+
+body.dark-theme .service-item {
+    background-color: #333333; /* Fondo oscuro */
+    border: 1px solid #555555; /* Borde más claro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .service-item:hover {
+    background-color: #444444; /* Fondo más claro al pasar el ratón */
+}
+
+body.dark-theme .service-description {
+    background-color: #444444; /* Fondo oscuro */
+    color: #cccccc; /* Texto claro */
+}
+
+/* Pricing */
+body.dark-theme #pricing {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .pricing-note {
+    color: #cccccc; /* Texto claro */
+}
+
+body.dark-theme .pricing-container {
+    background-color: transparent; /* Fondo transparente */
+}
+
+body.dark-theme .pricing-block {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .pricing-block h3 {
+    color: #4caf50; /* Verde para los títulos */
+}
+
+body.dark-theme .pricing-block p {
+    color: #cccccc; /* Texto claro */
+}
+
+body.dark-theme .pricing-block:hover {
+    background-color: #444444; /* Fondo más claro al pasar el ratón */
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* Sombra clara */
+}
+
+/* Preguntas Frecuentes */
+body.dark-theme #asks2 {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme #asks2 h2 {
+    color: #4caf50; /* Verde para el título */
+}
+
+body.dark-theme .service-container-custom {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-theme .service-item {
+    background-color: #444444; /* Fondo oscuro */
+    border-bottom: 1px solid #555555; /* Borde más claro */
+    color: #cccccc; /* Texto claro */
+}
+
+body.dark-theme .service-item:hover {
+    background-color: #555555; /* Fondo más claro al pasar el ratón */
+}
+
+body.dark-theme .service-description {
+    background-color: #444444; /* Fondo oscuro */
+    color: #cccccc; /* Texto claro */
+}
+
+/* Preguntas Frecuentes - Ajuste del texto del botón en modo oscuro */
+body.dark-theme .service-btn {
+    color: #ffffff; /* Cambiar el texto del botón a blanco */
+}
+
+body.dark-theme .service-btn:hover {
+    background-color: #444444; /* Fondo más claro al pasar el ratón */
+    color: #ffffff; /* Mantener el texto blanco */
+}
+/* Modo oscuro para las tarjetas dentro de Services */
+body.dark-theme .service-box {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra clara */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-theme .service-box:hover {
+    background-color: #444444; /* Fondo más claro al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2); /* Sombra más pronunciada */
+}
+
+body.dark-theme .title-box {
+    color: #4caf50; /* Verde para los títulos */
+}
+
+body.dark-theme .services_img {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra clara para las imágenes */
+}

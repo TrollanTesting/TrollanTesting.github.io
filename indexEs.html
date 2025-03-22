@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="img/decorative.png" alt="Imagen decorativa" class="background-image">
+            <img src="img/decorative.png" alt="Imagen Decorativa" class="background-image">
             <div class="logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
@@ -28,125 +29,128 @@
                     <span class="moon-icon">🌙</span>
                 </label>
             </div> 
-            <div class="language-buttons">
+            <div class="language-buttons a">
                 <a href="#" id="lang-en" class="lang-en">EN</a>
                 <a href="#" id="lang-es" class="lang-es">ES</a>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="#about" id="nav-about">Sobre mí</a></li>
+                <li><a href="#about" id="nav-about">Sobre Mí</a></li>
                 <li><a href="#services" id="nav-services">Servicios</a></li>
                 <li><a href="#pricing" id="nav-pricing">Precios</a></li>
                 <li><a href="#contact" id="nav-contact">Contacto</a></li>
+                <li><a href="#asks2" id="nav-ask2">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about">
-            <h2>Sobre mí</h2>
-            <p>¡Bienvenido! Soy <strong>Javier Sánchez Muñoz</strong>, un <strong>entrenador personal certificado</strong> con más de 10 años de experiencia. Mi misión es ayudarte a alcanzar tus objetivos de fitness con planes de entrenamiento personalizados y orientación experta.</p>
-            <img src="img/line.png" alt="Línea decorativa" class="line">    
+            <h2>Sobre Mí</h2>
+            <div class="profile-container">
+                <img src="img/profile.png" alt="Imagen de Perfil" class="profile-image">
+                <p>¡Bienvenido! Soy <strong>Javier Sánchez Muñoz</strong>, un <strong>entrenador personal certificado</strong> con más de 10 años de experiencia. Mi misión es ayudarte a alcanzar tus objetivos de fitness con planes de entrenamiento personalizados y orientación experta.</p>
+            </div>      
         </section>
-
         <section id="services">
             <h2>Servicios</h2>
-            <ul>
-                <li class="service-item">
-                    <button class="service-btn">🏋️‍♂️ Entrenamiento Personalizado <span>⬇</span></button>
-                    <div class="service-description">
-                        <p>Sesiones de entrenamiento adaptadas a tus necesidades y objetivos individuales.</p>
+            <div class="services">
+                <div class="service">
+                    <div class="service-box">
+                        <h3 class="title-box"> Entrenamiento Personalizado </h3>
+                        <img class="services_img" src="img/gymbro.png" alt="">
+                        <p>Sesiones de entrenamiento personalizadas adaptadas a tus necesidades y objetivos individuales.</p>
                     </div>
-                </li>
-                <li class="service-item">
-                    <button class="service-btn">👥 Clases Grupales <span>⬇</span></button>
-                    <div class="service-description">
-                        <p>Únete a una comunidad que trabaja junta para alcanzar sus metas en un ambiente divertido y motivador.</p>
+                </div>
+                <div class="service">
+                    <div class="service-box">
+                        <h3 class="title-box"> Clases Grupales </h3>
+                        <img class="services_img" src="img/clase.png" alt="">
+                        <p>Únete a una comunidad de personas trabajando hacia sus metas de fitness en un ambiente divertido y de apoyo.</p>
                     </div>
-                </li>
-                <li class="service-item">
-                    <button class="service-btn">🥗 Asesoramiento Nutricional <span>⬇</span></button>
-                    <div class="service-description">
-                        <p>Recibe orientación experta sobre cómo optimizar tu alimentación para mejorar tu rendimiento y salud.</p>
+                </div>
+                <div class="service">
+                    <div class="service-box">
+                        <h3 class="title-box"> Asesoramiento Nutricional </h3>
+                        <img class="services_img" src="img/comidaSana.png" alt="">
+                        <p>Obtén orientación experta sobre cómo optimizar tu dieta para mejorar tu salud y rendimiento.</p>
                     </div>
-                </li>
-                <li class="service-item">
-                    <button class="service-btn">💻 Coaching Online <span>⬇</span></button>
-                    <div class="service-description">
-                        <p>Entrenamiento a distancia adaptado a tu horario y necesidades, con planes personalizados.</p>
+                </div>
+                <div class="service">
+                    <div class="service-box">
+                        <h3 class="title-box"> Entrenamiento Online </h3>
+                        <img class="services_img" src="img/coach.png" alt="">
+                        <p>Entrenamiento remoto adaptado a tu horario y necesidades de fitness, con entrenamientos personalizados.</p>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
-
         <section id="process">
             <h2>Proceso de Entrenamiento</h2>
             <div class="process-step">
                 <div class="step-number">1</div>
                 <div class="step-content">
                     <h3>Evaluación Inicial</h3>
-                    <p>Comenzamos con una evaluación integral para entender tu estado físico. Se puede realizar en persona o mediante videollamada.</p>
-                    <section id="nutrition">
-                        <h2>Evaluación de Nutrición y Fitness</h2>
-                        <div class="service-container">
-                            <ul class="service-list">
-                                <li class="service-item">
-                                    <button class="service-btn">📋 Cuestionario de Nutrición <span>⬇</span></button>
-                                    <div class="service-description">
-                                        <p>Un cuestionario detallado que nos ayuda a comprender tus hábitos alimenticios y metas.</p>
-                                    </div>
-                                </li>
-                                <li class="service-item">
-                                    <button class="service-btn">📊 Análisis de Composición Corporal <span>⬇</span></button>
-                                    <div class="service-description">
-                                        <p>Analizamos tu composición corporal para adaptar los planes de nutrición y entrenamiento según tus necesidades específicas.</p>
-                                    </div>
-                                </li>
-                                <li class="service-item">
-                                    <button class="service-btn">🩺 Entrevista Detallada sobre Lesiones <span>⬇</span></button>
-                                    <div class="service-description">
-                                        <p>Una entrevista completa para entender lesiones pasadas y ajustar tu programa en consecuencia.</p>
-                                    </div>
-                                </li>
-                                <li class="service-item">
-                                    <button class="service-btn">🏋️‍♂️ Pruebas de Condición Física General <span>⬇</span></button>
-                                    <div class="service-description">
-                                        <p>Pruebas básicas de fitness para evaluar tu fuerza, resistencia y nivel general de acondicionamiento físico.</p>
-                                    </div>
-                                </li>
-                                <li class="service-item">
-                                    <button class="service-btn">📖 Registra Todo en tu Diario de Entrenamiento <span>⬇</span></button>
-                                    <div class="service-description">
-                                        <p>Mantén un registro de tu progreso, rendimiento en los entrenamientos y nutrición para observar una mejora continua.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    
+                    <p>Comenzamos cada viaje de fitness con una <strong>evaluación integral</strong> para entender tu <strong>punto de partida</strong>. Esta fase puede realizarse <strong>en persona</strong> en nuestras instalaciones (<strong>recomendado</strong>) o mediante <strong>videollamada</strong>.</p>
                 </div>
             </div>
             <div class="process-step">
                 <div class="step-number">2</div>
                 <div class="step-content">
                     <h3>Plan de Entrenamiento Personalizado</h3>
-                    <p>Diseñamos un programa de ejercicios ajustado a tu nivel, preferencias y objetivos específicos.</p>
+                    <p>Después de establecer tu <strong>punto de partida</strong>, nos enfocamos en crear un <strong>plan de ejercicio personalizado</strong> que se ajuste perfectamente a tus <strong>necesidades</strong> y <strong>objetivos</strong>.</p>
                 </div>
             </div>
             <div class="process-step">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>Seguimiento y Soporte Continuo</h3>
-                    <p>Brindamos apoyo constante, respondemos preguntas y ajustamos el plan según tu progreso.</p>
+                    <h3>Soporte Continuo y Seguimiento del Progreso</h3>
+                    <p>Estamos comprometidos a estar contigo <strong>en cada paso del camino</strong>, proporcionando <strong>soporte constante</strong> y un <strong>seguimiento meticuloso del progreso</strong>.</p>
                 </div>
             </div>
         </section>
-
         <section id="pricing">
             <h2>Precios</h2>
-            <img src="img/pricing.png" class="pricing-img" alt="Precios">
-        </section>
-
+            <p class="pricing-note">Todos los planes incluyen planes de entrenamiento personalizados, orientación experta y acceso completo a los servicios. ¡Además, obtén una clase de prueba gratuita con cada servicio!</p>
+            <div class="pricing-container">
+                <div class="pricing-block">
+                    <h3>Solo una clase</h3>
+                    <p><strong>Paga solo por las clases que quieras</strong> - 22€</p>
+                    <div class="discount">
+                        <p><strong>¡Sin descuento!</strong></p>
+                    </div>
+                    <p class="offer-details">Este plan incluye todo lo de los servicios anteriores.</p>
+                    <button class="btn-contratar">Contáctame</button>
+                </div>
+                <div class="pricing-block2">
+                    <h3>2 Horas por Semana</h3>
+                    <p><strong>8 horas al mes</strong> - 160€</p>
+                    <div class="discount">
+                        <p><strong>¡10% de descuento!</strong> ¡Suscríbete ahora!</p>
+                    </div>
+                    <p class="offer-details">Este plan incluye todo lo de los servicios anteriores.</p>
+                    <button class="btn-contratar">Contáctame</button>
+                </div>
+                <div class="pricing-block">
+                    <h3>3 Horas por Semana</h3>
+                    <p><strong>12 horas al mes</strong> - 220€</p>
+                    <div class="discount">
+                        <p><strong>¡15% de descuento!</strong> Oferta por tiempo limitado.</p>
+                    </div>
+                    <p class="offer-details">Este plan incluye todo lo de los servicios anteriores.</p>
+                    <button class="btn-contratar">Contáctame</button>
+                </div>
+                <div class="pricing-block2">
+                    <h3>4 Horas por Semana</h3>
+                    <p><strong>16 horas al mes</strong> - 290€</p>
+                    <div class="discount">
+                        <p><strong>¡20% de descuento!</strong> Mejor oferta disponible.</p>
+                    </div>
+                    <p class="offer-details">Este plan incluye todo lo de los servicios anteriores.</p>
+                    <button class="btn-contratar">Contáctame</button>
+                </div>
+            </div>
+        </section>        
         <section id="carousel">
             <h2>Imágenes</h2>
             <div class="carousel">
@@ -155,22 +159,57 @@
                 <div><img src="img/img1.png" alt="Imagen 3"></div>
             </div>
         </section>
-
         <section id="contact">
             <h2>Contacto</h2>
-            <p>¿Listo para empezar tu viaje de fitness? ¡Contáctame hoy mismo!</p>
+            <p>¿Listo para comenzar tu viaje de fitness? ¡Ponte en contacto conmigo hoy!</p>
             <form id="contactForm">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Correo electrónico:</label>
+                <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit" id="contactButton">Enviar Mensaje</button>
             </form>
         </section>
+        <section id="asks2">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="service-container-custom">
+                <ul class="service-list custom-service-list">
+                    <li class="service-item">
+                        <button class="service-btn">📋 Cuestionario Nutricional <span>+</span></button>
+                        <div class="service-description">
+                            <p>Un cuestionario detallado que nos ayuda a entender tus hábitos alimenticios y objetivos.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <button class="service-btn">📊 Análisis de Composición Corporal <span>+</span></button>
+                        <div class="service-description">
+                            <p>Analizamos tu composición corporal para adaptar los planes de nutrición y entrenamiento a tus necesidades específicas.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <button class="service-btn">🩺 Entrevista de Lesiones en Profundidad <span>+</span></button>
+                        <div class="service-description">
+                            <p>Una entrevista completa para entender lesiones pasadas y ajustar tu programa en consecuencia.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <button class="service-btn">🏋️‍♂️ Pruebas Generales de Fitness <span>+</span></button>
+                        <div class="service-description">
+                            <p>Pruebas básicas de fitness para evaluar tu fuerza, resistencia y nivel general de condición física.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <button class="service-btn">📖 Registra Todo en tu Diario de Entrenamiento <span>+</span></button>
+                        <div class="service-description">
+                            <p>Registra tu progreso, rendimiento en los entrenamientos y nutrición para ver mejoras continuas.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Javier Sánchez Muñoz - Entrenador Personal</p>
         <div class="social-media">
@@ -185,7 +224,7 @@
             </a>
         </div>
     </footer>
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
