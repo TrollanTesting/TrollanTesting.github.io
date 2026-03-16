@@ -25,9 +25,15 @@
 
       // Inicializar Firebase
       firebase.initializeApp(firebaseConfig);
-      
-      // Ajuste para mejorar la estabilidad en WebGL
-      firebase.firestore().settings({ experimentalForceLongPolling: true });
+
+      // Obtener la instancia de firestore
+      const db = firebase.firestore();
+
+      // Aplicar settings solo si no se han aplicado antes
+      db.settings({ 
+      experimentalForceLongPolling: true,
+     merge: true // ESTO elimina la advertencia del log
+    });
     </script>
   </head>
 
