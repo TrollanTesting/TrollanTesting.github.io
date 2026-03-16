@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "428607837147",
+    "firebase_url": "https://webexample-cbd69-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "webexample-cbd69",
+    "storage_bucket": "webexample-cbd69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428607837147:android:8ee56bc4481933b646cdfe",
+        "android_client_info": {
+          "package_name": "com.VisualSafety.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428607837147-2kmujsquinph7ibeq2gjuo441n8q3rke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBptStsXr132GkSU3-nW2FEgsguWf3B648"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428607837147-2kmujsquinph7ibeq2gjuo441n8q3rke.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "428607837147-7b9cgoqntghs4s81nhl0ke74qh2ogl2b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "VisualSafety"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
